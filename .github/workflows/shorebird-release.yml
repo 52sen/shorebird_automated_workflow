@@ -25,7 +25,7 @@ jobs:
         id: shorebird-release
         uses: shorebirdtech/shorebird-release@v0
         with:
-          platform: android # or 'ios'
+          platform: android
 
       - name: 📝 Output Release Version
         run: echo "Release version: ${{ steps.shorebird-release.outputs.release-version }}"
